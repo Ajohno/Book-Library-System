@@ -1,6 +1,9 @@
+import javax.annotation.processing.Generated;
+
 public class Book {
 
     //Fields
+
     private int ISBN;
     private String title;
     private String author;
@@ -17,6 +20,18 @@ public class Book {
         this.publish_date = publish_date;
         this.number_of_pages = number_of_pages;
 
+    }
+
+    //Empty constructor
+    public Book() {
+
+        int[] date = {0,0,0};
+
+        this.ISBN = 0;
+        this.title = "";
+        this.author = "";
+        this.publish_date = date;
+        this.number_of_pages = 0;
     }
 
     //Getters
